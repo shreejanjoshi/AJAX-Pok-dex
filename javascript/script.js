@@ -17,6 +17,7 @@ button.addEventListener("click", function () {
     const pokeMoveThree = document.querySelector(".poke-move-three");
     const pokeMoveFour = document.querySelector(".poke-move-four");
     let input = document.getElementById("user-input").value;
+    let evoImgs = document.getElementById("evolution-img");
 
     fetch("https://pokeapi.co/api/v2/pokemon/" + input + "/")
         .then(res => res.json())
@@ -43,7 +44,7 @@ button.addEventListener("click", function () {
             if(dataFirstMove == false && dataSecondMove == false && dataSecondMove == false && dataThirdMove == false){
                 
                 pokeMoveOne.classList.remove("hide");
-                pokeMoveOne.innerHTML = "No Moves Yet";
+                pokeMoveOne.innerHTML = "";
             }
 
             if (dataFirstMove) {
@@ -103,11 +104,20 @@ button.addEventListener("click", function () {
 
                 for(let i=0; i<evolveTo.length; i++){
                     if(evolveTo[i].evolve_to){
-                        for(let x=0; x<evolveTo[i].evolve_to.length; j++){
-                            add.push(evolveTo[i].evolve_to[j].species.name);
+                        for(let x=0; x<evolveTo[i].evolve_to.length; x++){
+                            add.push(evolveTo[i].evolve_to[x].species.name);
                         }
                     }
-                }    
+                }
+                
+                for(let y =0; y < add.length; y++){
+                    let evoImgAPI = await fetch("https://pokeapi.co/api/v2/pokemon/" + add[y]);
+                    let data = await evoImgAPI.json();
+
+                    // evoImgs.src= data["sprites"]["front_default"];
+                    evoImgs.innerHTML += "<img src=" + data.sprites['front_default'] + ">";
+
+                }
 
         }
 
