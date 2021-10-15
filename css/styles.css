@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+  }
+
+  .pokedex{
+    border: 3px solid black;
+    width: 50%;
+    margin: 0 auto;
+    background: #DEDEDE;
+    box-shadow: inset 0 0 3px 3px rgba(0,0,0,.3);
+  }
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .evolution {
+    text-align: center;
+  }
+  
+  body {
+    background-color: #CC0000;
+  }
+  
+  .game-name {
+    margin: 30px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #3B4CCA;
+    font-size: 8rem;
+    color: #FFDE00;
+  }
+
+  .poke-name {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Lobster', cursive;
+    text-transform: uppercase;
+    text-shadow: 5px 0 #3B4CCA;
+  }
+
+  .poke-id {
+    color: black;
+    text-shadow: 5px 0 red;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+  }
+
+   .hide{
+      display: none;
+  }   
+
+  /* .main-section_white {
+    background: #DEDEDE;
+    box-shadow: inset 0 0 3px 3px rgba(0,0,0,.3);
+    height: 100%;
+  } */
+
+  /* .main-section_black {
+    background: black;
+    height: calc(100% - 50px);
+    margin: 25px;
+    padding: 10px;
+    width: calc(100% - 50px);
+  }  */
+
+  .main-screen {
+    border-radius: 15px;
+    /* height: 40vh; */
+    height: 100%;
+    padding: 15px;
+    margin: 10px;
+    background-color: yellow;
+    box-shadow: inset 0 0 3px 3px rgba(0,0,0,.3);
+  }  
+
+  .screen_header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+ 
+
+  .screen_image {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .poke-image {
+    height: 150px;
+    width: 150px;
+  }
+
+  .
+
+  .screen_description {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+  }
+
+  .moves {
+    height: 100%;
+    padding: 5px;
+  }
+  
+  .poke-move-one,
+  .poke-move-two,
+  .poke-move-three,
+  .poke-move-four {
+    background: rgba(255,255,255,.3);
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 2rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  .next-layer{
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .top-evolution{
+      padding-top: 25px;
+  }
+
+  .text-and-button{
+      padding-top: 25px;
+  }
+  
